@@ -51,6 +51,14 @@ describe("zoned-date-time", function() {
       [2000, 3, 3, 0, 0, 0],
       {isDST: false}
     );
+    
+    //print ireland dates
+    console.log("Winter Date: ")
+    console.log(new ZonedDateTime(new Date("2015-01-01T09:15:30.000Z"), zoneData.Europe.Dublin));
+
+    console.log("\nSummer Date: ")
+    console.log(new ZonedDateTime(new Date("2015-06-01T09:15:30.000Z"), zoneData.Europe.Dublin));
+    
   });
 
   describe(".clone()", function() {
